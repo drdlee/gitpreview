@@ -1,0 +1,65 @@
+// VARIABLES
+
+$black:   #333;
+$pale:    #d2e1dd;
+$pink:    #c69;
+$blue:    #036;
+
+$font-stack:    'Roboto Mono', monospace;
+$font-size:     14px;
+
+@mixin circle($rad, $height, $width, $bg, $color){
+    border-radius: $rad;
+    height: $height;
+    width: $width;
+    background-color: $bg;
+    color: $color;
+    line-height: $height;
+    text-align: center;
+}
+
+@mixin roundCorner($rad){
+    border-radius: $rad;
+}
+
+body{
+    background: $pale;
+    color: $black;
+    font-family: $font-stack;
+    font-size: $font-size;
+}
+
+article{
+    background: white;
+    margin: -60px auto;
+    box-sizing: border-box;
+    width: 760px;
+    padding: 40px;
+    z-index: -2;
+    position: relative;
+}
+
+header{
+    margin: 0 auto;
+    @include circle(100%, 200px, 200px, $blue, white);
+    h1{
+        font-size: $font-size + 4;
+    }
+}
+
+footer{
+    @include circle(100%, 150px, 150px, $pink, $pale);
+    z-index: -4;
+    position: relative;
+    font-size: $font-size - 3;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.small-circle {
+    font-size: 10px;
+    @include circle(100%,50px, 50px, white , $blue);
+}

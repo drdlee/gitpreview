@@ -1,0 +1,54 @@
+body {
+  background: #d2e1dd;
+  color: #333;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px; }
+
+article {
+  background: white;
+  margin: -60px auto;
+  box-sizing: border-box;
+  width: 760px;
+  padding: 40px;
+  z-index: -2;
+  position: relative; }
+
+header {
+  margin: 0 auto;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  background-color: #036;
+  color: white;
+  line-height: 200px;
+  text-align: center; }
+  header h1 {
+    font-size: 18px; }
+
+footer {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  background-color: #c69;
+  color: #d2e1dd;
+  line-height: 150px;
+  text-align: center;
+  z-index: -4;
+  position: relative;
+  font-size: 11px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+.small-circle {
+  font-size: 10px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: #036;
+  line-height: 50px;
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */

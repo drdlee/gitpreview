@@ -1,0 +1,22 @@
+<%include partial/top %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header"><%= idShows.title %></div>
+    <div class="ui top attatched">
+        <div class="item">
+            <img class="ui cntered rounded image" src="<%= idShows.image %>">
+            <div class="content">
+                <span><%= idShows.dateCreated.toDateString() %></span>
+            </div>
+        </div>
+    </div>
+    <div class="ui description">
+        <p><%- idShows.body %></p>
+    </div>
+    <a class="ui button" href="/blogs/<%=idShows._id%>/edit">Edit</a>
+    <form id="delete" action="/blogs/<%=idShows._id%>?_method=DELETE" method="POST">
+        <button class="ui button">Delete</button>
+    </form>
+</div>
+
+<%include partial/bot %>
